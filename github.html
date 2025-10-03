@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lợi ích của GitHub — Tài liệu ngắn</title>
+  <meta name="description" content="Tổng hợp lợi ích chính khi sử dụng GitHub: quản lý mã nguồn, hợp tác, CI/CD, portfolio, bảo mật..." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#2dd4bf;--muted:#9aa4b2;--glass: rgba(255,255,255,0.03)}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;}
+    body{background:linear-gradient(180deg,#071028 0%, #051226 100%);color:#e6eef6;padding:32px;box-sizing:border-box}
+    .container{max-width:980px;margin:0 auto}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#0ea5a4,#06b6d4);display:flex;align-items:center;justify-content:center;color:#022; font-weight:700}
+    h1{font-size:22px;margin:0}
+    p.lead{color:var(--muted);margin-top:6px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:18px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .card h3{margin:0 0 8px 0}
+    ul{margin:0;padding-left:18px;color:var(--muted)}
+    .code{background:var(--glass);padding:10px;border-radius:8px;font-family:monospace;color:#dbeafe;margin-top:10px}
+    footer{margin-top:20px;color:var(--muted);font-size:13px}
+    .actions{margin-top:18px;display:flex;gap:8px}
+    button{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:8px;color:inherit;cursor:pointer}
+    button.primary{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#042226;border:none}
+    .lang{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">GH</div>
+      <div>
+        <h1>Lợi ích của GitHub</h1>
+        <p class="lead">Tổng hợp ngắn gọn những lợi ích chính khi dùng GitHub — dành cho lập trình viên, nhóm và tổ chức.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card">
+        <h3>1. Quản lý mã nguồn (Version control)</h3>
+        <p class="lang">(EN) Track changes, revert, branch & merge easily.</p>
+        <ul>
+          <li>Lưu lịch sử toàn bộ thay đổi của dự án.</li>
+          <li>Tạo nhánh (branch) để làm tính năng mới mà không ảnh hưởng chính.</li>
+          <li>Quay lại phiên bản cũ khi cần.</li>
+        </ul>
+        <div class="code">git clone &amp;&amp; git branch feature-x &amp;&amp; git commit -m "start feature"</div>
+      </section>
+
+      <section class="card">
+        <h3>2. Hợp tác & Đánh giá mã (Collaboration & Code review)</h3>
+        <p class="lang">(EN) Pull requests, reviews and comments streamline teamwork.</p>
+        <ul>
+          <li>Pull requests cho phép review trước khi hợp nhất.</li>
+          <li>Nhận xét trực tiếp trên dòng mã (inline comments).</li>
+          <li>Kiểm soát quyền truy cập, bảo đảm ai được merge hay deploy.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>3. Tự động hóa (CI/CD)</h3>
+        <p class="lang">(EN) Run tests and deploy automatically with GitHub Actions.</p>
+        <ul>
+          <li>Chạy test tự động khi push code (Continuous Integration).</li>
+          <li>Tự động deploy khi build thành công (Continuous Delivery).</li>
+          <li>Tiết kiệm thời gian, giảm lỗi do thao tác thủ công.</li>
+        </ul>
+        <div class="code">.github/workflows/ci.yml — run tests &amp; build on push</div>
+      </section>
+
+      <section class="card">
+        <h3>4. Quản lý dự án & Issue tracking</h3>
+        <p class="lang">(EN) Issues, projects and milestones keep work organized.</p>
+        <ul>
+          <li>Tạo Issues để theo dõi bug, feature hoặc task.</li>
+          <li>Sử dụng Project boards (Kanban) để quản lý tiến độ.</li>
+          <li>Milestones giúp gom các issue theo mục tiêu phát hành.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>5. Portfolio & Hồ sơ chuyên nghiệp</h3>
+        <p class="lang">(EN) Showcase projects publicly to employers and collaborators.</p>
+        <ul>
+          <li>GitHub profile hiển thị hoạt động, repo tiêu biểu.</li>
+          <li>GitHub Pages cho phép host trang cá nhân hoặc docs miễn phí.</li>
+        </ul>
+        <div class="code">username.github.io — host personal site with GitHub Pages</div>
+      </section>
+
+      <section class="card">
+        <h3>6. Bảo mật & Compliance</h3>
+        <p class="lang">(EN) Built-in security alerts and dependency scanning.</p>
+        <ul>
+          <li>Quét lỗ hổng bảo mật trong dependencies (Dependabot).</li>
+          <li>Secret scanning, bảo vệ thông tin nhạy cảm.</li>
+          <li>Audit trail — ai đã thay đổi gì, khi nào.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>7. Cộng đồng & Open-source</h3>
+        <p class="lang">(EN) Contribute to and learn from millions of open-source projects.</p>
+        <ul>
+          <li>Dễ dàng tham gia dự án mã nguồn mở, nhận phản hồi.</li>
+          <li>Học tập bằng cách đọc code thực tế, xem cách tổ chức dự án.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>8. Tích hợp & Ecosystem</h3>
+        <p class="lang">(EN) Many tools and services integrate with GitHub (IDEs, CI, cloud, bots).</p>
+        <ul>
+          <li>Hàng ngàn ứng dụng trong GitHub Marketplace.</li>
+          <li>Tích hợp với IDE (VS Code, JetBrains), dịch vụ cloud (AWS, Azure, GCP).</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3>Tổng kết (Summary)</h3>
+      <p class="lang">(EN) GitHub helps teams and individuals build, collaborate, and ship software faster and safer.</p>
+      <ul>
+        <li>Phù hợp cho cá nhân học tập, lập trình viên freelance, nhóm nhỏ và doanh nghiệp lớn.</li>
+        <li>Kết hợp version control + collaboration + automation + security makes modern software development efficient.</li>
+      </ul>
+      <div class="actions">
+        <button id="downloadBtn" class="primary">Tải file HTML này</button>
+        <button id="copyBtn">Sao chép nội dung vào clipboard</button>
+      </div>
+    </div>
+
+    <footer>
+      Tài liệu ngắn — bạn có thể chỉnh sửa nội dung để phù hợp với người đọc. (Tiếng Việt với chú thích tiếng Anh ngắn).
+    </footer>
+  </div>
+
+  <script>
+    const downloadBtn = document.getElementById('downloadBtn');
+    const copyBtn = document.getElementById('copyBtn');
+    downloadBtn.addEventListener('click', ()=>{
+      const content = '<!doctype html>\n' + document.documentElement.outerHTML;
+      const blob = new Blob([content], {type: 'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'loi_ich_github.html';
+      document.body.appendChild(a); a.click(); a.remove();
+      URL.revokeObjectURL(url);
+    });
+    copyBtn.addEventListener('click', async ()=>{
+      try{
+        await navigator.clipboard.writeText(document.documentElement.outerHTML);
+        copyBtn.textContent = 'Đã sao chép!';
+        setTimeout(()=>copyBtn.textContent = 'Sao chép nội dung vào clipboard',2000);
+      }catch(e){
+        copyBtn.textContent = 'Không thể sao chép';
+      }
+    });
+  </script>
+</body>
+</html>
