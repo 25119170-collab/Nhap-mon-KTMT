@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cái nhìn tương lai của Kỹ thuật Máy tính</title>
+  <meta name="description" content="Tổng quan về xu hướng và tầm nhìn tương lai của kỹ thuật máy tính: AI, điện toán lượng tử, edge, bảo mật, đạo đức, giáo dục và việc làm." />
+  <style>
+    :root{--bg:#0b1220;--card:#0f1724;--accent:#7dd3fc;--muted:#9fb0c8}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;color:#e6f0fb;background:linear-gradient(180deg,#071022 0%, #041024 100%);padding:28px}
+    .wrap{max-width:980px;margin:0 auto}
+    header{display:flex;align-items:center;gap:14px}
+    .logo{width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,#60a5fa,#7dd3fc);display:flex;align-items:center;justify-content:center;font-weight:700;color:#042;}
+    h1{margin:0;font-size:22px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+    .main{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .aside{background:rgba(255,255,255,0.02);padding:14px;border-radius:12px;height:fit-content}
+    section{margin-bottom:14px}
+    h2{margin:0 0 8px 0;color:var(--accent)}
+    ul{margin:0;padding-left:18px;color:var(--muted)}
+    .highlight{background:rgba(125,211,252,0.06);padding:10px;border-radius:8px;color:#dff6ff;margin-top:8px}
+    pre.code{background:rgba(255,255,255,0.03);padding:10px;border-radius:8px;overflow:auto;font-family:monospace;color:#dbeafe}
+    footer{color:var(--muted);margin-top:12px;font-size:13px}
+    .actions{display:flex;gap:8px;margin-top:12px}
+    button{padding:8px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit;cursor:pointer}
+    button.primary{background:linear-gradient(90deg,var(--accent),#60a5fa);border:none;color:#042}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">KT</div>
+      <div>
+        <h1>Cái nhìn tương lai của Kỹ thuật Máy tính</h1>
+        <p class="lead">Tổng quan ngắn về xu hướng, cơ hội và thách thức trong lĩnh vực kỹ thuật máy tính.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main class="main">
+        <section>
+          <h2>Khái quát</h2>
+          <p class="highlight">Kỹ thuật máy tính đang tiến nhanh theo nhiều hướng: trí tuệ nhân tạo (AI) sâu rộng, điện toán lượng tử, điện toán biên (edge), tự động hóa, và một hệ sinh thái đòi hỏi bảo mật cũng như đạo đức. Những tiến bộ này không chỉ thay đổi công nghệ mà còn ảnh hưởng sâu rộng đến xã hội, công việc và giáo dục.</p>
+        </section>
+
+        <section>
+          <h2>1. Trí tuệ nhân tạo & Học máy</h2>
+          <ul>
+            <li>AI ngày càng tích hợp sâu vào hệ thống phần cứng và phần mềm — từ chip chuyên dụng đến mô hình lớn (LLMs).</li>
+            <li>Tối ưu hóa năng lượng và mô hình tiết kiệm bộ nhớ sẽ là trọng tâm, giúp AI triển khai rộng hơn trên thiết bị biên.</li>
+            <li>AI sẽ hỗ trợ thiết kế phần cứng (co-design) và tự động hoá nhiều công đoạn phát triển phần mềm.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>2. Điện toán lượng tử</h2>
+          <ul>
+            <li>Chưa phổ biến rộng rãi nhưng có tiềm năng đột phá cho mật mã học, tối ưu hoá và mô phỏng vật lý/phân tử.</li>
+            <li>Kỹ thuật phần mềm lượng tử (QIS) và ngôn ngữ lập trình lượng tử sẽ phát triển cùng phần cứng.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. Edge computing & IoT</h2>
+          <ul>
+            <li>Dữ liệu xử lý gần nguồn: giảm độ trễ, tiết kiệm băng thông, tăng quyền riêng tư.</li>
+            <li>Thiết bị biên cần phần mềm nhẹ, an toàn và quản lý vòng đời (OTA updates) hiệu quả.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. Bảo mật và Quyền riêng tư</h2>
+          <ul>
+            <li>Với hệ thống phân tán và AI, tấn công chuỗi cung ứng và rò rỉ dữ liệu trở thành rủi ro lớn.</li>
+            <li>Kỹ thuật bảo mật sẽ tích hợp sớm trong vòng đời phát triển (shift-left security) và dùng cryptography tiên tiến (post-quantum cryptography).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>5. Đạo đức, luật pháp và xã hội</h2>
+          <ul>
+            <li>Quy định về AI, bảo vệ dữ liệu, và trách nhiệm thuật toán sẽ ảnh hưởng đến thiết kế hệ thống.</li>
+            <li>Kỹ sư phần mềm cần hiểu tác động xã hội và tham gia vào thiết kế có trách nhiệm.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>6. Giáo dục và Kỹ năng nghề nghiệp</h2>
+          <ul>
+            <li>Học tập suốt đời (lifelong learning) là bắt buộc: kỹ năng mới (ML Ops, an ninh đám mây, quantum basics) sẽ được yêu cầu.</li>
+            <li>Kiến thức nền tảng (toán, cấu trúc dữ liệu, hệ điều hành) vẫn quan trọng — nhưng kết hợp với kỹ năng thực hành trên nền tảng đám mây và AI.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Kết luận</h2>
+          <p class="highlight">Tương lai của kỹ thuật máy tính là một bức tranh đa chiều: nhanh, an toàn và có trách nhiệm. Kỹ sư ngày mai không chỉ viết mã mà còn thiết kế hệ thống chịu trách nhiệm xã hội, tối ưu năng lượng và liên tục thích nghi với công nghệ mới.</p>
+        </section>
+
+        <div class="actions">
+          <button id="downloadBtn" class="primary">Tải file HTML</button>
+          <button id="copyBtn">Sao chép HTML vào clipboard</button>
+        </div>
+      </main>
+
+      <aside class="aside">
+        <h3>Nhanh</h3>
+        <ul>
+          <li>AI tích hợp sâu</li>
+          <li>Edge & IoT lan rộng</li>
+          <li>Bảo mật và đạo đức quan trọng</li>
+        </ul>
+
+        <h3 style="margin-top:12px">Gợi ý sử dụng</h3>
+        <ul>
+          <li>Sử dụng file này làm slide giới thiệu hoặc tài liệu đọc nhanh.</li>
+          <li>Cần bản mở rộng hơn (tài liệu tham khảo, biểu đồ, timeline)? Mình làm tiếp được.</li>
+        </ul>
+
+        <pre class="code">/* Ví dụ cấu trúc project */
+src/
+  |-- ai_models/
+  |-- edge_agents/
+  |-- infra/
+README.md
+        </pre>
+      </aside>
+    </div>
+
+    <footer>File này bằng tiếng Việt — bạn muốn mình xuất bản dưới dạng PDF hoặc thêm ảnh minh họa không?</footer>
+  </div>
+
+  <script>
+    const downloadBtn = document.getElementById('downloadBtn');
+    const copyBtn = document.getElementById('copyBtn');
+    downloadBtn.addEventListener('click', ()=>{
+      const content = '<!doctype html>\n' + document.documentElement.outerHTML;
+      const blob = new Blob([content], {type: 'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'tuong_lai_ky_thuat_may_tinh.html';
+      document.body.appendChild(a); a.click(); a.remove();
+      URL.revokeObjectURL(url);
+    });
+    copyBtn.addEventListener('click', async ()=>{
+      try{
+        await navigator.clipboard.writeText(document.documentElement.outerHTML);
+        copyBtn.textContent = 'Đã sao chép!';
+        setTimeout(()=>copyBtn.textContent = 'Sao chép HTML vào clipboard',2000);
+      }catch(e){
+        copyBtn.textContent = 'Không thể sao chép';
+      }
+    });
+  </script>
+</body>
+</html>
